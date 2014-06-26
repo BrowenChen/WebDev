@@ -1,3 +1,4 @@
+//Setting up dependencies
 var express = require('express');
 var path = require('path');
 var favicon = require('static-favicon');
@@ -9,11 +10,11 @@ var mongo = require('mongodb');
 var monk = require('monk');
 var db = monk('localhost:27017/nodetest1'); //Uses the database nodetest1 in mongo
 
-
+//Setting up routes
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
-
+//Starts express instance
 var app = express();
 
 // view engine setup
