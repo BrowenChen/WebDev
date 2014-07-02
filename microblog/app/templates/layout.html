@@ -2,12 +2,14 @@
 <html>
 	<head>
 		<title> DROC Industries </title>
+		<link rel='stylesheet' href="{{ url_for('static', filename='css/bootstrap.min.css') }}">;
 		<link rel='stylesheet' href="{{ url_for('static', filename='css/main.css') }}">;
 	</head>
 	<body>
 
 		<header>
 			<div class="container">
+
 				<h1 class="logo"> DROC Industries </h1>
 			
 				<strong><nav>
@@ -16,14 +18,15 @@
 					<li><a href="{{ url_for('about') }}">About</a></li>
 				</nav></strong>
 			</div>
+
 		</header>
-
-
 
 		<div class="container">
 			{% block content %}
 			{% endblock %}
 		</div>
+
+
 	</body>
 </html>
 

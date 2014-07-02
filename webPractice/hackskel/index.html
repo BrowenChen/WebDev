@@ -1,0 +1,26 @@
+<html>
+  <head> 
+    <script src="video.js"></script>  
+    <script src="complicated.js"></script>
+  </head>
+  <body>
+      <video id="v"></video>
+      <canvas id="c"></canvas>
+
+      <script> 
+      	vidData = [1,1,1,1];
+
+      	function changeValue(attribute, value){
+      		vidData[attribute] = value / 75;
+      	}
+      </script>
+      
+   Brightness
+    <input type="range" min="0" max="150" value="75" step="1" onchange="changeVideo(0, this.value)"></input>
+    RedScale
+    <input type="range" min="0" max="150" value="75" step="1" onchange="changeVideo(1, this.value)"></input>
+    GreenScale
+    <input type="range" min="0" max="150" value="75" step="1" onchange="changeVideo(2, this.value)"></input>
+    BlueScale
+    <input type="range" min="0" max="150" value="75" step="1" onchange="changeVideo(3, this.value)"></input>  </body>
+</html>
